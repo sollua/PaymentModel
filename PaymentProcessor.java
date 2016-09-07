@@ -10,6 +10,8 @@ import java.util.Calendar;
 
 import com.mysql.jdbc.CallableStatement;
 
+//test pull request
+
 public class PaymentProcessor {
 	
 private static final Boolean False = null;
@@ -51,7 +53,7 @@ private static double PMT(double rate,double term,double financeAmount)
    url =
     //"jdbc:mysql://localhost/delinq_db?useUnicode=true&&characterEncoding=gb2312&autoReconnect = true";
    "jdbc:mysql://localhost/delinq_db?profileSQL=false&&traceProtocol=false&&paranoid=false";
-   //¼òµ¥Ğ´·¨£ºurl = "jdbc:myqsl://localhost/test(Êı¾İ¿âÃû)? user=root(ÓÃ»§)&password=dfg353434(ÃÜÂë)";
+   //ç®€å•å†™æ³•ï¼šurl = "jdbc:myqsl://localhost/test(æ•°æ®åº“å)? user=root(ç”¨æˆ·)&password=dfg353434(å¯†ç )";
    user = "root";
    password = "";
    conn = DriverManager.getConnection(url,user,password);
@@ -156,7 +158,7 @@ private static double PMT(double rate,double term,double financeAmount)
     conn = null;
    }
   } catch(Exception e) {
-   System.out.println("Êı¾İ¿â¹Ø±Õ´íÎó");
+   System.out.println("æ•°æ®åº“å…³é—­é”™è¯¯");
    e.printStackTrace();
   }
  }
